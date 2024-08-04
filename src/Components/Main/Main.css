@@ -181,7 +181,7 @@
 @media (max-width: 600px) {
   .main-bottom input {
     flex: none;
-    width: 150px;
+    width: 180px;
   }
   .main-bottom img {
     width: 20px;
@@ -190,6 +190,6 @@
     padding: 5px 10px;
   }
   .search-box div {
-    gap: 5px; 
+    gap: 5px;
   }
 }
