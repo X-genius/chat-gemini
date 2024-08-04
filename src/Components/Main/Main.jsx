@@ -12,12 +12,13 @@ const Main = () => {
     resultData,
     input,
     setInput,
+    handleRefresh,
   } = useContext(Context);
 
   return (
     <div className='main'>
       <div className='nav'>
-        <p>Chat Gemini</p>
+        <p onClick={handleRefresh}>Chat Gemini</p>
         <img src={assets.user_icon} alt='' />
       </div>
       <div className='main-container'>
@@ -113,7 +114,7 @@ const Main = () => {
             </div>
           </div>
           <p className='bottom-info'>
-            Gemini may display inaccurate info, including about people, so
+            Chat Gemini may display inaccurate info, including about people, so
             double-check its responses. Your privacy and Gemini Apps
           </p>
         </div>

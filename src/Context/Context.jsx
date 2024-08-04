@@ -11,6 +11,10 @@ const ContextProvider = (props) => {
   const [loading, setLoading] = useState(false);
   const [resultData, setResultData] = useState('');
 
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   const delayPara = (index, nextWord) => {
     setTimeout(function () {
       setResultData((prev) => prev + nextWord);
@@ -72,6 +76,7 @@ const ContextProvider = (props) => {
     loading,
     resultData,
     newChat,
+    handleRefresh,
   };
 
   return (
